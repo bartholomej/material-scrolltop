@@ -1,0 +1,30 @@
+{
+    "name": "material-scrolltop",
+    "version": "0.5.0",
+    "homepage": "https://github.com/bartholomej/material-scrollTop",
+    "author": "Lukas Bartak (https://github.com/bartholomej)",
+    "description": "",
+    "main": [
+        "src/material-scrolltop.js",
+        "src/material-scrolltop.css",
+        "src/icons/*"
+    ],
+    "license": "MIT",
+    "keywords": [
+        "material",
+        "material design",
+        "jquery",
+        "scrollTop",
+        "sass"
+    ],
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "jquery": ">=1.7"
+    }
+}

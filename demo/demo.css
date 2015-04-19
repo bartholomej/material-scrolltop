@@ -1,0 +1,93 @@
+/**
+* Demo style
+*
+* Just for example. You don't need this stylesheet
+*/
+body {
+    background-color: #fafafa;
+    font-family: Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+header {
+    background: #4caf50;
+    color: #fff;
+    padding: 1rem 0;
+}
+header .container {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 24px;
+}
+article,
+footer {
+    max-width: 400px;
+    margin: 0 auto;
+}
+h1 {
+    color: #fff;
+    font-size: 44px;
+    font-weight: 300;
+    margin: 0 0 12px 0;
+    line-height: 48px;
+}
+h2 {
+    color: #4caf50;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+}
+h3 {
+    color: #4caf50;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+}
+p {
+    margin: 24px 0;
+    font-size: 16px;
+}
+hr {
+    border: 0;
+    height: 1px;
+    background: #4caf50;
+    margin: 1em 0;
+}
+a {
+    color: #4caf50;
+    text-decoration: underline;
+}
+a:hover {
+    text-decoration: none;
+}
+.btn {
+    background: #4caf50;
+    text-align: center;
+    vertical-align: middle;
+    border: none;
+    white-space: nowrap;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: .05em;
+    color: #fff;
+    text-transform: uppercase;
+    height: 54px;
+    line-height: 54px;
+    padding: 0 26px;
+    border-radius: 2px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    transition: .2s ease-out;
+}
+.btn:hover {
+    box-shadow: 0 4px 7px 0 rgba(0,0,0,.3),0 2px 3px 0 rgba(0,0,0,.1);
+}
+.wrap {
+    padding: 1rem 0 0 0;
+}
