@@ -2,6 +2,8 @@
 
 Lightweight, Material Design inspired plugin for scrolling on top of the html page (with jQuery)
 
+![Demo animation](https://github.com/bartholomej/material-scrollTop/blob/master/demo/images/material-scrolltop-animation.gif)
+
 ## Install
 
 Via [bower](https://github.com/bartholomej/material-scrollTop/blob/master/bower.json):
@@ -11,10 +13,10 @@ bower install material-scrolltop
 
 ### Manual install (download)
 
-If you want the latest stable version, get the latest release from the [releases page](https://github.com/bartholomej/material-scrollTop/releases).
+If you want the latest stable version, get the latest release [latest release](https://github.com/bartholomej/material-scrollTop/releases/latest) from the releases page.
 
 ## Demo
-Download the latest release and look at `demo/index.html`
+Download the [latest release](https://github.com/bartholomej/material-scrollTop/releases/latest) and take a look at `demo/index.html`
 
 ## Usage
 
