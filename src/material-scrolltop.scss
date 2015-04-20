@@ -8,10 +8,33 @@
 * Issues: https://github.com/bartholomej/material-scrolltop/issues
 */
 
-$mst-color: #4caf50; // Primary background color
-$mst-gutter: rem-calc(23); // Gap from corner
-$mst-button-size: rem-calc(56); // Size of circle button
+$mst-color: #4caf50; // Primary background color (deafualt: $primary-color)
+$mst-gutter: 23px; // Gap from corner (default: $column-gutter)
+$mst-button-size: 56px; // Size of circle button (default: rem-calc(56))
 $mst-icon: true !default; // Set false if you want to use your own sign directly inside html span element
+
+// ==========================================================================
+//   Mixins for material-scrolltop
+// ==========================================================================
+
+@mixin prefixer($name, $argument) {
+    -webkit-#{$name}: #{$argument};
+    -ms-#{$name}: #{$argument};
+    -moz-#{$name}: #{$argument};
+    -o-#{$name}: #{$argument};
+    #{$name}: #{$argument};
+}
+
+@mixin centerer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    @include prefixer(transform, translate(-50%, -50%));
+}
+
+// ==========================================================================
+//   Stylesheet
+// ==========================================================================
 
 .material-scrolltop {
     display: block;
@@ -29,7 +52,7 @@ $mst-icon: true !default; // Set false if you want to use your own sign directly
     cursor: hand;
     border-radius: 50%;
     background: $mst-color;
-    @include transition(all 0.3s cubic-bezier(0.25, 0.25, 0, 1));
+    @include prefixer(transition, all 0.3s cubic-bezier(0.25, 0.25, 0, 1));
     @if $mst-icon {
         @extend %mst-icon;
     }
@@ -54,7 +77,7 @@ $mst-icon: true !default; // Set false if you want to use your own sign directly
     &:active::before {
         width: 120%;
         padding-top: 120%;
-        @include transition(width .2s ease-out, padding-top .2s ease-out);
+        @include prefixer(transition, all .2s ease-out);
     }
 
     &.reveal {
@@ -69,31 +92,8 @@ $mst-icon: true !default; // Set false if you want to use your own sign directly
     }
 }
 
-/* ==========================================================================
-   Placeholders
-   ========================================================================== */
-
 %mst-icon {
-    background-image: url(i/top-arrow.svg);
+    background-image: url(icons/top-arrow.svg);
     background-position: center 50%;
     background-repeat: no-repeat;
-}
-
-/* ==========================================================================
-   Mixins
-   ========================================================================== */
-
-@mixin transform($params) {
-    -moz-transform: $params;
-    -o-transform: $params;
-    -ms-transform: $params;
-    -webkit-transform: $params;
-    transform: $params;
-}
-
-@mixin centerer {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    @include transform(translate(-50%, -50%));
 }
