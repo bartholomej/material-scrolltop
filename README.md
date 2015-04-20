@@ -72,7 +72,7 @@ $('body').materialScrollTop({   // Scroll to the top of <body> element ...
 
 ## Customization
 
-Using SASS, you can simply edit default styles and colors and customize plugin to fit your needs :thumbsup:. (Or just edit directly css stylesheet)
+Using SASS [*(this file)*](src/material-scrolltop.scss), you can simply edit default styles and colors and customize plugin to fit your needs :thumbsup:. (Or just edit directly css stylesheet)
 
 ## Dependencies
 
