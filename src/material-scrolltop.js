@@ -1,12 +1,12 @@
 /**
-* Material-scrollTop
-* 
-* Author: Bartholomej
-* Website: https://github.com/bartholomej/material-scrollTop
-* Docs: https://github.com/bartholomej/material-scrollTop
-* Repo: https://github.com/bartholomej/material-scrollTop
-* Issues: https://github.com/bartholomej/material-scrollTop/issues
-*/
+ * Material-scrollTop
+ *
+ * Author: Bartholomej
+ * Website: https://github.com/bartholomej/material-scrollTop
+ * Docs: https://github.com/bartholomej/material-scrollTop
+ * Repo: https://github.com/bartholomej/material-scrollTop
+ * Issues: https://github.com/bartholomej/material-scrollTop/issues
+ */
 (function($) {
     function mScrollTop(element, settings) {
 
@@ -42,7 +42,9 @@
         });
 
         _.btnElement.click(function() {
-            $('body').animate({scrollTop: scrollTo}, _.options.duration, _.options.easing, _.options.onScrollEnd);
+            $('body').animate({
+                scrollTop: scrollTo
+            }, _.options.duration, _.options.easing, _.options.onScrollEnd);
             return false;
         });
     }
@@ -52,9 +54,9 @@
             opt = arguments[0],
             l = _.length,
             i = 0;
-            if (typeof opt == 'object' || typeof opt == 'undefined') {
-                _[i].materialScrollTop = new mScrollTop(_[i], opt);
-            }
+        if (typeof opt == 'object' || typeof opt == 'undefined') {
+            _[i].materialScrollTop = new mScrollTop(_[i], opt);
+        }
         return _;
     };
 }(jQuery));
