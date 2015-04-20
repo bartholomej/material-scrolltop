@@ -13,9 +13,9 @@ bower install material-scrolltop
 
 ### Manual install (download)
 
-If you want the latest stable version, get the latest release [latest release](https://github.com/bartholomej/material-scrollTop/releases/latest) from the releases page.
+If you want the latest stable version, get the [latest release](https://github.com/bartholomej/material-scrollTop/releases/latest) from the releases page.
 
-## Demo
+## Demo (example)
 Download the [latest release](https://github.com/bartholomej/material-scrollTop/releases/latest) and take a look at `demo/index.html`
 
 ## Usage
@@ -72,7 +72,7 @@ $('body').materialScrollTop({   // Scroll to the top of <body> element ...
 
 ## Customization
 
-Using SASS (or just CSS), you can simply edit (or override) default styles and colors and customize plugin to fit your needs.
+Using SASS, you can simply edit default styles and colors and customize plugin to fit your needs :thumbsup:. (Or just edit directly css stylesheet)
 
 ## Dependencies
 
