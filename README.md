@@ -1,6 +1,14 @@
-# Material ScrollTop
+# Material ScrollTop Button
 
-Lightweight, Material Design inspired plugin for scrolling on top of the html page (with jQuery)
+Lightweight, **Material Design inspired button for scrol-to-top** of the page (jQuery plugin)
+
+ - Lightweight
+ - Material Design inspired
+ - With ripple effect
+ - Smoothly animated 
+ - [Customizable](#customization)
+ - With some useful [options](#settings)...
+ - CSS3 (Sass) + jQuery
 
 ![Demo animation](https://github.com/bartholomej/material-scrollTop/blob/master/demo/images/material-scrolltop-animation.gif)
 
@@ -65,14 +73,31 @@ $('body').materialScrollTop({   // Scroll to the top of <body> element ...
     duration: 600,              // Animation will run 600 ms
     easing: 'swing',            // Do it with swing animation
     onScrollEnd: function() {   // Give me some log when animation ends
-        console.log('Scroll End');
+        console.log('This is the end, my only friend, the end...');
     }
 });
 ```
 
 ## Customization
 
-Using SASS [*(this file)*](src/material-scrolltop.scss), you can simply edit default styles and colors and customize plugin to fit your needs :thumbsup:. (Or just edit directly css stylesheet)
+### Colors, sizes and stuff
+Using SASS [*(this file)*](src/material-scrolltop.scss), you can simply edit default styles, colors, position and customize plugin to fit your needs. :thumbsup: (Or just edit directly css stylesheet)
+
+### Icons
+#### SVG
+
+You can change `svg` icon in [`src/icons/`](src/icons/) directory.
+
+#### Custom text or sign
+ 1. Turn off svg icon as sass variable: `$mst-icon: false`
+ 2. Build your new stylesheet (now without svg icon)
+ 3. Put your new sign or text inside html `<span>` element like this:
+
+```html
+<button class="material-scrolltop" type="button">
+        <span>↑</span>
+</button>
+```
 
 ## Dependencies
 
@@ -80,7 +105,9 @@ jQuery 1.7+
 
 ## License
 
-Copyright (c) 2015 Lukas Bartak
+Copyright &copy; 2015 [Lukas Bartak](http://bartweb.cz)
+
+Proudly powered by nature, wind, tea and beer ;)
 
 All contents are licensed under the [MIT license].
 

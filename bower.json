@@ -1,7 +1,7 @@
 {
     "name": "material-scrolltop",
-    "version": "0.5.0",
-    "homepage": "https://github.com/bartholomej/material-scrollTop",
+    "version": "0.6.1",
+    "homepage": "https://github.com/bartholomej/material-scrolltop",
     "author": "Lukas Bartak (https://github.com/bartholomej)",
     "description": "",
     "main": [
@@ -13,8 +13,12 @@
     "keywords": [
         "material",
         "material design",
+        "ripple",
+        "button",
+        "animate",
         "jquery",
         "scrollTop",
+        "scroll to top",
         "sass"
     ],
     "ignore": [
