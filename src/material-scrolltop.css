@@ -24,6 +24,7 @@
     cursor: hand;
     border-radius: 50%;
     background: #4caf50;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-transition: all 0.3s cubic-bezier(0.25, 0.25, 0, 1);
     -ms-transition: all 0.3s cubic-bezier(0.25, 0.25, 0, 1);
     -moz-transition: all 0.3s cubic-bezier(0.25, 0.25, 0, 1);

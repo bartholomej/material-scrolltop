@@ -52,6 +52,7 @@ $mst-icon: true !default; // Set false if you want to use your own sign directly
     cursor: hand;
     border-radius: 50%;
     background: $mst-color;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     @include prefixer(transition, all 0.3s cubic-bezier(0.25, 0.25, 0, 1));
     @if $mst-icon {
         @extend %mst-icon;
