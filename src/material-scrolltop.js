@@ -43,7 +43,7 @@
 
         _.btnElement.click(function() {
             var trigger = true;
-            $('body').animate({
+            $('html, body').animate({
                 scrollTop: scrollTo
             }, _.options.duration, _.options.easing, function() {
                 if (trigger) { // Fix callback triggering twice on chromium
