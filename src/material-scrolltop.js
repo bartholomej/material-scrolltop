@@ -42,9 +42,18 @@
         });
 
         _.btnElement.click(function() {
+            var trigger = true;
             $('body').animate({
                 scrollTop: scrollTo
-            }, _.options.duration, _.options.easing, _.options.onScrollEnd);
+            }, _.options.duration, _.options.easing, function() {
+                if (trigger) { // Fix callback triggering twice on chromium
+                    trigger = false;
+                    var callback = _.options.onScrollEnd;
+                    if (typeof callback === "function") {
+                        callback();
+                    }
+                }
+            });
             return false;
         });
     }
