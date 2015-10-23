@@ -1,6 +1,6 @@
 # Material ScrollTop Button
 
-Lightweight, **Material Design inspired button for scrol-to-top** of the page (jQuery plugin)
+Lightweight, **Material Design inspired button for scroll-to-top** of the page (jQuery plugin)
 
  - Lightweight
  - Material Design inspired
