@@ -40,16 +40,16 @@ In your `<head>` add:
 
 Then, before your closing `</body>` tag add:
 ```html
-<!-- Material button -->
+<!-- material-scrolltop button -->
 <button class="material-scrolltop" type="button"></button>
 
-<!-- Material ScrollTop plugin -->
+<!-- material-scrolltop plugin -->
 <script src="js/material-scrolltop.js"></script>
-```
 
-Finally initialize with (minimal):
-```javascript
-$('body').materialScrollTop();
+<!-- Initialize material-scrolltop with (minimal) -->
+<script>
+    $('body').materialScrollTop();
+</script>
 ```
 
 ## Settings
