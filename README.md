@@ -1,6 +1,8 @@
 # Material ScrollTop Button
 
-Lightweight, **Material Design inspired button for scroll-to-top** of the page (jQuery plugin)
+Lightweight, **Material Design inspired button for scroll-to-top** of the page (jQuery plugin).
+
+Just hit the button to smoothly scroll back to the top of the page. [Here's the demo.](http://bartholomej.github.io/material-scrolltop/)
 
  - Lightweight
  - Material Design inspired
@@ -22,9 +24,6 @@ bower install material-scrolltop
 ### Manual install (download)
 
 If you want the latest stable version, get the [latest release](https://github.com/bartholomej/material-scrollTop/releases/latest) from the releases page.
-
-## Demo (example)
-Download the [latest release](https://github.com/bartholomej/material-scrollTop/releases/latest) and take a look at `demo/index.html`
 
 ## Usage
 
@@ -98,6 +97,10 @@ You can change `svg` icon in [`src/icons/`](src/icons/) directory.
         <span>↑</span>
 </button>
 ```
+
+## Demo (example)
+Watch this: [http://bartholomej.github.io/material-scrolltop/
+](http://bartholomej.github.io/material-scrolltop/)
 
 ## Dependencies
 
