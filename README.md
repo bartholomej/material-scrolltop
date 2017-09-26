@@ -1,3 +1,5 @@
+[![Join the chat at https://gitter.im/material-scrolltop/Lobby](https://badges.gitter.im/material-scrolltop/Lobby.svg)](https://gitter.im/material-scrolltop/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 # Material ScrollTop Button
 
 Lightweight, **Material Design inspired button for scroll-to-top** of the page (jQuery plugin).
