@@ -16,6 +16,10 @@ Just hit the button to smoothly scroll back to the top of the page. [Here's the 
 
 ![Demo animation](https://github.com/bartholomej/material-scrollTop/blob/master/demo/images/material-scrolltop-animation.gif)
 
+## Demo (example)
+Watch this: [http://bartholomej.github.io/material-scrolltop/
+](http://bartholomej.github.io/material-scrolltop/)
+
 ## Install
 
 Via [bower](https://github.com/bartholomej/material-scrollTop/blob/master/bower.json):
@@ -100,9 +104,7 @@ You can change `svg` icon in [`src/icons/`](src/icons/) directory.
 </button>
 ```
 
-## Demo (example)
-Watch this: [http://bartholomej.github.io/material-scrolltop/
-](http://bartholomej.github.io/material-scrolltop/)
+
 
 ## Dependencies
 
