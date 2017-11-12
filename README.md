@@ -9,7 +9,7 @@ Just hit the button to smoothly scroll back to the top of the page. [Here's the 
  - Lightweight
  - Material Design inspired
  - With ripple effect
- - Smoothly animated 
+ - Smoothly animated
  - [Customizable](#customization)
  - With some useful [options](#settings)...
  - CSS3 (Sass) + jQuery
@@ -22,7 +22,12 @@ Watch this: [http://bartholomej.github.io/material-scrolltop/
 
 ## Install
 
-Via [bower](https://github.com/bartholomej/material-scrollTop/blob/master/bower.json):
+Via **yarn** or **npm**
+```bash
+yarn material-scrolltop
+```
+
+Via **bower**
 ```bash
 bower install material-scrolltop
 ```
