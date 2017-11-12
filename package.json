@@ -1,0 +1,34 @@
+{
+  "name": "material-scrolltop",
+  "version": "0.6.4",
+  "description": "Lightweight, Material Design inspired plugin for scrolling on top of the html page (with jQuery)",
+  "main": "src/material-scrolltop.js",
+  "author": "Lukas Bartak <bart@bartweb.cz> (https://github.com/bartholomej)",
+  "homepage": "https://github.com/bartholomej/material-scrolltop",
+  "license": "MIT",
+  "repository": {
+    "url": "git+https://github.com/bartholomej/material-scrolltop.git",
+    "type": "git"
+  },
+  "bugs": {
+    "url": "https://github.com/bartholomej/material-scrolltop/issues"
+  },
+  "keywords": [
+    "material",
+    "material design",
+    "ripple",
+    "button",
+    "animate",
+    "jquery",
+    "scrollTop",
+    "scroll to top",
+    "sass"
+  ],
+  "peerDependencies": {
+    "jquery": ">=1.7"
+  },
+  "engines": {
+    "yarn": ">= 1.0.0",
+    "node": ">=0.12"
+  }
+}
