@@ -11,7 +11,6 @@ sftp-config.json
 # OS generated files #
 .DS_Store
 ehthumbs.db
-Icon?
 Thumbs.db
 
 # IDE #
