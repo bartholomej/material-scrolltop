@@ -115,6 +115,10 @@ You can change `svg` icon in [`src/icons/`](src/icons/) directory.
 
 jQuery 1.7+
 
+## Application
+
+- [Drupal module](https://www.drupal.org/project/material_scrolltop)
+
 ## License
 
 Copyright &copy; 2015 [Lukas Bartak](http://bartweb.cz)
