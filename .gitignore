@@ -30,3 +30,6 @@ npm-debug.log
 
 # Dist folders
 dist/
+
+# yarn
+yarn.lock
