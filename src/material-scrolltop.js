@@ -40,6 +40,12 @@
                 _.btnElement.removeClass(_.revealClass);
             }
         });
+        
+        $(document).bind("scroll mousedown DOMMouseScroll mousewheel keyup", function(e){
+            if ( e.which > 0 || e.type === "mousedown" || e.type === "mousewheel"){
+                $('html, body').stop();
+            }
+        });
 
         _.btnElement.click(function() {
             var trigger = true;
