@@ -53,7 +53,7 @@
     background: #66bb6a;
 }
 
-.material-scrolltop:active::before {
+.material-scrolltop:focus::before {
     width: 120%;
     padding-top: 120%;
     -webkit-transition: all 0.2s ease-out;

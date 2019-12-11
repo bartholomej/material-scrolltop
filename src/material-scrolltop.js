@@ -41,7 +41,8 @@
             }
         });
 
-        _.btnElement.click(function() {
+        _.btnElement.on('touchstart mousedown', function() {
+            this.focus();
             var trigger = true;
             $('html, body').animate({
                 scrollTop: scrollTo
