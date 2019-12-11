@@ -28,5 +28,3 @@ Thumbs.db
 npm-debug.log
 /npm-debug.log.*
 
-# Dist folders
-dist/
