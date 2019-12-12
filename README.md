@@ -12,9 +12,9 @@ Just hit the button to smoothly scroll back to the top of the page. [Here's the 
 - Smoothly animated
 - [Customizable](#customization)
 - With some useful [options](#settings)...
-- CSS3 (Sass) + jQuery
+- TypeScript + SCSS + jQuery
 
-![Demo animation](https://github.com/bartholomej/material-scrollTop/blob/master/demo/images/material-scrolltop-animation.gif)
+![Demo animation](https://github.com/bartholomej/material-scrollTop/blob/master/demo/images/material-scrolltop-animation.gif?raw=true)
 
 ## Demo (example)
 
@@ -29,15 +29,9 @@ Via **yarn** or **npm**
 yarn add material-scrolltop
 ```
 
-Via **bower**
-
-```bash
-bower install material-scrolltop
-```
-
 ### Manual install (download)
 
-If you want the latest stable version, get the [latest release](https://github.com/bartholomej/material-scrollTop/releases/latest) from the releases page.
+If you want the latest stable version, get the [latest release](https://github.com/bartholomej/material-scrollTop/releases/latest) from the releases page and use `dist` folder.
 
 ## Usage
 
@@ -50,6 +44,9 @@ In your `<head>` add:
 ```html
 <!-- Material ScrollTop stylesheet -->
 <link rel="stylesheet" href="dist/material-scrolltop.css" />
+
+<!-- material-scrolltop plugin -->
+<script src="dist/material-scrolltop.js"></script>
 ```
 
 Then, before your closing `</body>` tag add:
@@ -58,10 +55,7 @@ Then, before your closing `</body>` tag add:
 <!-- material-scrolltop button -->
 <button class="material-scrolltop" type="button"></button>
 
-<!-- material-scrolltop plugin -->
-<script src="dist/material-scrolltop.js"></script>
-
-<!-- Initialize material-scrolltop with (minimal) -->
+<!-- Initialize material-scrolltop (minimal) -->
 <script>
   $('body').materialScrollTop();
 </script>
@@ -95,22 +89,54 @@ $('body').materialScrollTop({
 });
 ```
 
+## Folders
+
+<pre>
+material-scrolltop/
+├── src/
+|   ├── icons/
+│   |   └── top-arrow.svg
+│   ├── material-scrolltop.scss
+│   └── material-scrolltop.ts
+├── dist/
+|   ├── icons/
+│   |   └── top-arrow.svg
+│   ├── material-scrolltop.css
+│   └── material-scrolltop.js
+└── demo/
+    ├── ...
+    └── index.html
+    └── examples/
+</pre>
+
+### src/ (for development)
+
+Typescript + sass source files
+
+### dist/ (for production)
+
+JavaScript + CSS
+
+(compiled from `src/` folder with command `yarn build`)
+
 ## Customization
 
 ### Colors, sizes and stuff
 
-Using SASS [_(this file)_](src/material-scrolltop.scss), you can simply edit default styles, colors, position and customize plugin to fit your needs. :thumbsup: (Or just edit directly css stylesheet)
+Using SASS [_(this file in 'src' folder)_](src/material-scrolltop.scss), you can simply edit default styles, colors, position and customize plugin to fit your needs. :thumbsup: (Or just edit directly css stylesheet)
+
+Hint: Modify scss file, run `yarn build` and see the demo.
 
 ### Icons
 
 #### SVG
 
-You can change `svg` icon in [`src/icons/`](src/icons/) directory.
+You can change `svg` icon in [`icons/`](src/icons/) directory.
 
 #### Custom text or sign
 
 1.  Turn off svg icon as sass variable: `$mst-icon: false`
-2.  Build your new stylesheet (now without svg icon)
+2.  Build your new stylesheet `yarn build` (now without svg icon)
 3.  Put your new sign or text inside html `<span>` element like this:
 
 ```html
@@ -131,7 +157,7 @@ jQuery 1.7+
 
 Copyright &copy; 2015 - 2020 [Lukas Bartak](http://bartweb.cz)
 
-Proudly powered by nature, wind, tea and beer ;)
+Proudly powered by nature 🗻, wind 💨, tea 🍵 and beer 🍺 ;)
 
 All contents are licensed under the [MIT license].
 
