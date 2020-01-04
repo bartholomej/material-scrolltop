@@ -1,6 +1,6 @@
 {
   "name": "material-scrolltop",
-  "version": "2.0.0-beta.1",
+  "version": "2.0.0-beta.2",
   "description": "Lightweight, Material Design inspired plugin for scrolling on top of the html page (with jQuery)",
   "main": "./dist/material-scrolltop.js",
   "types": "./dist/material-scrolltop.d.ts",
