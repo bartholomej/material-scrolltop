@@ -39,18 +39,19 @@
     "jquery",
     "scrollTop",
     "scroll to top",
-    "sass"
+    "sass",
+    "typescript"
   ],
   "peerDependencies": {
     "jquery": ">=1.7"
   },
   "engines": {
     "yarn": ">= 1.0.0",
-    "node": ">=0.12"
+    "node": ">=10"
   },
   "dependencies": {
     "node-sass": "^4.13.0",
-    "typescript": "^3.7.3"
+    "typescript": "^3.7.4"
   },
   "devDependencies": {
     "@types/jquery": "^3.3.31"
