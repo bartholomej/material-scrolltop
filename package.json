@@ -11,8 +11,9 @@
   "homepage": "https://github.com/bartholomej/material-scrolltop",
   "license": "MIT",
   "scripts": {
-    "tsc": "tsc",
+    "start": "yarn build --watch",
     "build": "yarn delete:dist & yarn copy & yarn build:scss & yarn tsc",
+    "tsc": "tsc",
     "delete:dist": "rm -rf dist/* ",
     "copy": "rsync -r ./src/icons ./dist/",
     "build:scss": "node-sass src -o dist",
