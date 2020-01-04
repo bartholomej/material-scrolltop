@@ -4,7 +4,7 @@
 
 Lightweight, **Material Design inspired button for scroll-to-top** of the page (jQuery plugin).
 
-Just hit the button to smoothly scroll back to the top of the page. [Here's the demo.](http://bartholomej.github.io/material-scrolltop/)
+Just hit the button to smoothly scroll back to the top of the page. [Here's the demo.](https://bartholomej.github.io/material-scrolltop/)
 
 - Lightweight
 - Material Design inspired
@@ -12,14 +12,13 @@ Just hit the button to smoothly scroll back to the top of the page. [Here's the 
 - Smoothly animated
 - [Customizable](#customization)
 - With some useful [options](#settings)...
-- TypeScript + SCSS + jQuery
+- jQuery + CSS, (TypeScript + SCSS)
 
 ![Demo animation](https://github.com/bartholomej/material-scrollTop/blob/master/demo/images/material-scrolltop-animation.gif?raw=true)
 
 ## Demo (example)
 
-Watch this: [http://bartholomej.github.io/material-scrolltop/
-](http://bartholomej.github.io/material-scrolltop/)
+Watch this: [https://bartholomej.github.io/material-scrolltop/](https://bartholomej.github.io/material-scrolltop/)
 
 ## Install
 
@@ -72,7 +71,7 @@ Then, before your closing `</body>` tag add:
 | easing         | string     | 'swing' | Indicating which easing function to use for the transition animate() |
 | onScrollEnd    | Function() | false   | A function to call once the animation is complete                    |
 
-### Example
+### Example (advanced usage)
 
 ```javascript
 $('body').materialScrollTop({
@@ -119,6 +118,10 @@ JavaScript + CSS
 
 (compiled from `src/` folder with command `yarn build`)
 
+### demo/ (example page)
+
+Here you can see it in [real use](https://bartholomej.github.io/material-scrolltop/).
+
 ## Customization
 
 ### Colors, sizes and stuff
@@ -148,6 +151,20 @@ You can change `svg` icon in [`icons/`](src/icons/) directory.
 ## Dependencies
 
 jQuery 1.7+
+
+## Breaking changes
+
+Version 2.x.x contains some breaking changes.
+
+- **src/** folder now contains source files `.scss` + `.ts` which are NOT executable in browser.
+- **dist/** folder contains compiled `.css`, `.js`, ... (executable in browser!)
+
+## Old version
+
+Old version is still available:
+
+- Dev branch: [1.x](https://github.com/bartholomej/material-scrolltop/tree/1.x)
+- npm package: `yarn add material-scrolltop@1`
 
 ## Application
 
