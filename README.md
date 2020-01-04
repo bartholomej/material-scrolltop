@@ -1,6 +1,11 @@
+[![npm version](https://badge.fury.io/js/material-scrolltop.svg)](https://badge.fury.io/js/material-scrolltop)
 [![Join the chat at https://gitter.im/material-scrolltop/Lobby](https://badges.gitter.im/material-scrolltop/Lobby.svg)](https://gitter.im/material-scrolltop/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+![](https://github.com/bartholomej/material-scrolltop/workflows/Build%20&%20Publish/badge.svg)
+[![volkswagen status](https://auchenberg.github.io/volkswagen/volkswargen_ci.svg?v=1)](https://github.com/auchenberg/volkswagen)
 
 # Material ScrollTop Button
+
+_[Upgrade instructions 1.x → 2.x](#upgrade-instructions)_
 
 Lightweight, **Material Design inspired button for scroll-to-top** of the page (jQuery plugin).
 
@@ -152,14 +157,16 @@ You can change `svg` icon in [`icons/`](src/icons/) directory.
 
 jQuery 1.7+
 
-## Breaking changes
+## Upgrade instructions
 
-Version 2.x.x contains some breaking changes.
+**Version 1.x → 2.x**
+
+Version 2.x.x contains some breaking changes:
 
 - **src/** folder now contains source files `.scss` + `.ts` which are NOT executable in browser.
 - **dist/** folder contains compiled `.css`, `.js`, ... (executable in browser!)
 
-## Old version
+## Old versions
 
 Old version is still available:
 
