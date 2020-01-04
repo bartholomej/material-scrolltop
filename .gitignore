@@ -17,7 +17,6 @@ Thumbs.db
 .idea/
 *.swp
 .settings/
-.vscode/
 *.tmlanguage.cache
 *.tmPreferences.cache
 *.stTheme.cache
@@ -27,4 +26,4 @@ Thumbs.db
 /bower_components/
 npm-debug.log
 /npm-debug.log.*
-
+package-lock.json
