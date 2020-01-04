@@ -8,7 +8,7 @@
  * Issues: https://github.com/bartholomej/material-scrollTop/issues
  */
 
-interface Settings {
+interface MaterialScrollTopSettings {
   revealElement: 'body' | string;
   revealPosition: 'top' | 'bottom';
   padding: number;
@@ -17,22 +17,25 @@ interface Settings {
   onScrollEnd: Function;
 }
 
-interface RootObject {
+interface MaterialScrollTopRoot {
   btnClass: string;
   revealClass: string;
-  revealElement: JQuery;
-  btnElement: JQuery;
-  initial: Settings;
-  options: Settings;
+  revealElement: JQuery<HTMLElement>;
+  btnElement: JQuery<HTMLElement>;
+  initial: MaterialScrollTopSettings;
+  options: MaterialScrollTopSettings;
 }
 
 interface JQuery {
-  materialScrollTop(): JQuery;
+  materialScrollTop(): MaterialScrollTopSettings;
 }
 
-(function($) {
-  function mScrollTop(element: HTMLElement, settings: Settings) {
-    const _: RootObject = this;
+(function($: JQueryStatic) {
+  function mScrollTop(
+    element: HTMLElement,
+    settings: MaterialScrollTopSettings
+  ) {
+    const _: MaterialScrollTopRoot = this;
     let breakpoint: number;
     let scrollTo = 0;
 

@@ -1,14 +1,18 @@
 {
   "name": "material-scrolltop",
-  "version": "1.0.1",
+  "version": "2.0.0-beta.1",
   "description": "Lightweight, Material Design inspired plugin for scrolling on top of the html page (with jQuery)",
   "main": "dist/material-scrolltop.js",
+  "types": "dist/material-scrolltop.d.ts",
+  "files": [
+    "dist"
+  ],
   "author": "Lukas Bartak <bart@bartweb.cz> (https://github.com/bartholomej)",
   "homepage": "https://github.com/bartholomej/material-scrolltop",
   "license": "MIT",
   "scripts": {
     "tsc": "tsc",
-    "build": "yarn delete:dist & yarn copy & yarn build:scss & tsc --declaration -out dist/material-scrolltop.js src/material-scrolltop.ts",
+    "build": "yarn delete:dist & yarn copy & yarn build:scss & yarn tsc",
     "delete:dist": "rm -rf dist/* ",
     "copy": "rsync -r ./src/icons ./dist/",
     "build:scss": "node-sass src -o dist",

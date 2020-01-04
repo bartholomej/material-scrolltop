@@ -3,10 +3,10 @@
     "target": "es5",
     "module": "commonjs",
     "esModuleInterop": true,
+    "outDir": "./dist",
     "declaration": true,
-    "allowJs": true,
-    "checkJs": true,
-    "emitDeclarationOnly": true,
     "forceConsistentCasingInFileNames": true
-  }
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
 }
