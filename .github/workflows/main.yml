@@ -1,0 +1,56 @@
+name: Build & Publish
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@master
+      - name: Use Node.js 13.x
+        uses: actions/setup-node@master
+        with:
+          node-version: 13.x
+          registry-url: 'https://registry.npmjs.org'
+
+      - name: Install dependencies # Install all deps
+        run: yarn
+
+      - name: Build
+        run: yarn build
+
+      - name: Publish NPM
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
+
+      # Publish to GitHub Package Registry
+      # - name: Set up package for GPR
+      #   run: yarn gpr:setup
+
+      # - name: Use GPR
+      #   uses: actions/setup-node@master
+      #   with:
+      #     node-version: 13
+      #     registry-url: https://npm.pkg.github.com/
+      #     scope: '@bartholomej'
+
+      # - name: Publish to GitHub Package Registry
+      #   run: |
+      #     npm publish
+      #   env:
+      #     NODE_AUTH_TOKEN: ${{github.token}}
+
+      - name: Prepare Github Pages
+        run: cp -r dist/ demo/dist/
+
+      - name: Deploy Github Pages
+        uses: peaceiris/actions-gh-pages@v2
+        env:
+          ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          PUBLISH_BRANCH: gh-pages
+          PUBLISH_DIR: ./demo
