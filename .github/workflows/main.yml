@@ -15,6 +15,7 @@ jobs:
         uses: actions/setup-node@master
         with:
           node-version: 13.x
+          registry-url: 'https://registry.npmjs.org'
 
       - name: Install dependencies # Install all deps
         run: yarn
@@ -23,11 +24,9 @@ jobs:
         run: yarn build
 
       - name: Publish NPM
-        uses: actions/setup-node@master
+        run: npm publish --tag beta
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
-        with:
-          args: publish --tag beta
 
       # Publish to GitHub Package Registry
       # - name: Set up package for GPR
