@@ -115,17 +115,21 @@ material-scrolltop/
 
 ### src/ (for development)
 
-Typescript + sass source files
+TypeScript + SCSS source files
+
+`.ts`, `.scss`
+
+> which are NOT executable in browser
 
 ### dist/ (for production)
 
 JavaScript + CSS
 
-(compiled from `src/` folder with command `yarn build`)
+> executable in browser and compiled from `src/` folder with command `yarn build`
 
 ### demo/ (example page)
 
-Here you can see it in [real use](https://bartholomej.github.io/material-scrolltop/).
+In this folder you can see an example in [real use](https://bartholomej.github.io/material-scrolltop/).
 
 ## Customization
 
@@ -171,7 +175,7 @@ Version 2.x.x contains some breaking changes:
 Old version is still available:
 
 - Dev branch: [1.x](https://github.com/bartholomej/material-scrolltop/tree/1.x)
-- npm package: `yarn add material-scrolltop@1`
+- npm package: `yarn add material-scrolltop@1-latest`
 
 ## Application
 
