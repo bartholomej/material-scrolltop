@@ -161,9 +161,21 @@ You can change `svg` icon in [`icons/`](src/icons/) directory.
 </button>
 ```
 
+## Other usage examples
+
+> Real examples from real users :)
+
+- [With Webpack](https://github.com/bartholomej/material-scrolltop/issues/5#issuecomment-347800442) (@Mombuyish)
+- [With Symfony PHP framework](https://github.com/acecconato/Portfolio/search?q=material&unscoped_q=material) (@acecconato)
+- _Put your real-life example here..._
+
 ## Dependencies
 
 jQuery 1.7+
+
+## Application
+
+- [Drupal module](https://www.drupal.org/project/material_scrolltop) (by @gh640)
 
 ## Upgrade instructions
 
@@ -180,10 +192,6 @@ Old version is still available:
 
 - Dev branch: [1.x](https://github.com/bartholomej/material-scrolltop/tree/1.x)
 - npm package: `yarn add material-scrolltop@1-latest`
-
-## Application
-
-- [Drupal module](https://www.drupal.org/project/material_scrolltop)
 
 ## License
 
