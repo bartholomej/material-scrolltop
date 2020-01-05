@@ -6,12 +6,21 @@
   "author": "Lukas Bartak <bart@bartweb.cz> (https://github.com/bartholomej)",
   "homepage": "https://github.com/bartholomej/material-scrolltop",
   "license": "MIT",
+  "scripts": {
+    "version": "",
+    "postversion": "git push && git push --follow-tags",
+    "release:patch": "npm version patch -m \"chore(update): patch release %s 🐛 \"",
+    "release:minor": "npm version minor -m \"chore(update): release %s 🚀\""
+  },
   "repository": {
     "url": "git+https://github.com/bartholomej/material-scrolltop.git",
     "type": "git"
   },
   "bugs": {
     "url": "https://github.com/bartholomej/material-scrolltop/issues"
+  },
+  "publishConfig": {
+    "tag": "1-latest"
   },
   "keywords": [
     "material",
