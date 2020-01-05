@@ -12,8 +12,10 @@
   "license": "MIT",
   "scripts": {
     "start": "yarn build --watch",
-    "build": "yarn delete:dist & yarn copy & yarn build:scss & yarn tsc",
+    "build": "yarn delete:dist & yarn copy & yarn build:scss & yarn tsc && yarn compress",
+    "compress": "yarn node-minify --compressor uglify-js --input 'dist/material-scrolltop.js' --output 'dist/material-scrolltop.min.js' && yarn node-minify --compressor cssnano --input 'dist/material-scrolltop.css' --output 'dist/material-scrolltop.min.css'",
     "tsc": "tsc",
+    "node-minify": "node-minify",
     "delete:dist": "rm -rf dist/* ",
     "copy": "rsync -r ./src/icons ./dist/",
     "build:scss": "node-sass src -o dist",
@@ -46,6 +48,9 @@
     "jquery": ">=1.7"
   },
   "devDependencies": {
+    "@node-minify/cli": "^5.2.1",
+    "@node-minify/cssnano": "^5.2.0",
+    "@node-minify/uglify-js": "^5.2.1",
     "@types/jquery": "^3.3.31",
     "node-sass": "^4.13.0",
     "typescript": "^3.7.4"

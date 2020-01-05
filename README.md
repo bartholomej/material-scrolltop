@@ -11,7 +11,7 @@ Lightweight, **Material Design inspired button for scroll-to-top** of the page (
 
 Just hit the button to smoothly scroll back to the top of the page. [Here's the demo.](https://bartholomej.github.io/material-scrolltop/)
 
-- Lightweight
+- Lightweight (~1kB gzipped)
 - Material Design inspired
 - With ripple effect
 - Smoothly animated
@@ -106,7 +106,9 @@ material-scrolltop/
 |   ├── icons/
 │   |   └── top-arrow.svg
 │   ├── material-scrolltop.css
-│   └── material-scrolltop.js
+│   ├── material-scrolltop.min.css
+│   ├── material-scrolltop.js
+│   └── material-scrolltop.min.js
 └── demo/
     ├── ...
     └── index.html
@@ -124,6 +126,8 @@ TypeScript + SCSS source files
 ### dist/ (for production)
 
 JavaScript + CSS
+
+`.js`, `.css` and their minified versions.
 
 > executable in browser and compiled from `src/` folder with command `yarn build`
 
