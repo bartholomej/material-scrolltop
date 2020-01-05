@@ -4,6 +4,11 @@ on:
   push:
     tags:
       - 'v*'
+    branches:
+      - 'next*'
+  pull_request:
+    branches:
+      - master
 
 jobs:
   build:
@@ -17,38 +22,32 @@ jobs:
           node-version: 13.x
           registry-url: 'https://registry.npmjs.org'
 
-      - name: Install dependencies # Install all deps
+      - name: Install dependencies
         run: yarn
 
       - name: Build
         run: yarn build
 
-      - name: Publish NPM
+      - name: echo
+        run: echo ${{github.ref}}
+
+      - name: Publish NPM latest
+        if: github.ref == 'refs/tags/v*' # run only with tag
         run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
 
-      # Publish to GitHub Package Registry
-      # - name: Set up package for GPR
-      #   run: yarn gpr:setup
-
-      # - name: Use GPR
-      #   uses: actions/setup-node@master
-      #   with:
-      #     node-version: 13
-      #     registry-url: https://npm.pkg.github.com/
-      #     scope: '@bartholomej'
-
-      # - name: Publish to GitHub Package Registry
-      #   run: |
-      #     npm publish
-      #   env:
-      #     NODE_AUTH_TOKEN: ${{github.token}}
+      - name: Publish NPM next!
+        if: github.ref == 'refs/heads/next' # run only with NEXT branch
+        run: npm publish --tag next
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
 
       - name: Prepare Github Pages
         run: cp -r dist/ demo/dist/
 
       - name: Deploy Github Pages
+        if: github.ref == 'refs/tags/v*' # run only with tag
         uses: peaceiris/actions-gh-pages@v2
         env:
           ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
