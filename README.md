@@ -1,6 +1,9 @@
 [![npm version](https://badge.fury.io/js/material-scrolltop.svg)](https://badge.fury.io/js/material-scrolltop)
+[![stars](https://badgen.net/github/stars/bartholomej/material-scrolltop)](https://github.com/bartholomej/material-scrolltop/)
+[![NPM Downloads](https://img.shields.io/npm/dm/material-scrolltop.svg)](https://www.npmjs.com/material-scrolltop)
 [![Join the chat at https://gitter.im/material-scrolltop/Lobby](https://badges.gitter.im/material-scrolltop/Lobby.svg)](https://gitter.im/material-scrolltop/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 ![](https://github.com/bartholomej/material-scrolltop/workflows/Build%20&%20Publish/badge.svg)
+[![HitCount](http://hits.dwyl.com/bartholomej/material-scrolltop.svg)](http://hits.dwyl.com/bartholomej/material-scrolltop)
 [![volkswagen status](https://auchenberg.github.io/volkswagen/volkswargen_ci.svg?v=1)](https://github.com/auchenberg/volkswagen)
 
 # Material ScrollTop Button
@@ -86,10 +89,10 @@ $('body').materialScrollTop({
   revealPosition: 'bottom', // ... and do it at the end of </header> element
   duration: 600, // Animation will run 600 ms
   easing: 'swing', // Do it with swing animation
-  onScrollEnd: function() {
+  onScrollEnd: function () {
     // Give me some log when animation ends
     console.log('This is the end, my only friend, the end...');
-  }
+  },
 });
 ```
 
